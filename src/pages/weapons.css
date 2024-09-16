@@ -1,0 +1,55 @@
+.weapons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #0d1117; 
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.weapons-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f0f6fc; /* Light text color */
+    margin-bottom: 30px;
+}
+
+.weapons-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.weapon-item {
+    background-color: #161b22; /* Dark card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    color: #c9d1d9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weapon-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.weapon-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f0f6fc;
+}
+
+.weapon-item p {
+    color: #8b949e; 
+}
+
+.weapon-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
